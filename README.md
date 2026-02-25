@@ -4,7 +4,7 @@ A **distributed, federated key management system** that securely stores and reco
 
 ---
 
-#Table of Contents
+## Table of Contents
 
 * Overview
 * Key Features
@@ -23,7 +23,7 @@ A **distributed, federated key management system** that securely stores and reco
 
 ---
 
-#Overview
+## Overview
 
 Traditional systems store cryptographic keys in a single location, creating a **single point of failure**. If that system is compromised, the entire key is exposed.
 
@@ -39,7 +39,7 @@ No single node ever possesses the full key.
 
 ---
 
-#Key Features
+## Key Features
 
 Distributed key storage
 Federated node architecture
@@ -53,31 +53,31 @@ Zero-trust inspired model
 
 ---
 
-#System Architecture
+## System Architecture
 
 ```
                     ┌─────────────────────────┐
                     │       Dashboard         │
-                    │ Monitoring & Audit Log │
+                    │ Monitoring & Audit Log  │
                     └────────────┬────────────┘
                                  │
                           Secure API Calls
                                  │
                     ┌────────────▼────────────┐
                     │ Key Reconstruction Core │
-                    │   Secure Aggregator    │
-                    └──────┬──────┬──────────┘
+                    │   Secure Aggregator     │
+                    └──────┬──────┬───────────┘
                            │      │
             ┌──────────────┘      └──────────────┐
-            │                                     │
-     ┌──────▼──────┐                     ┌───────▼──────┐
+            │                                    │
+     ┌──────▼──────┐                     ┌───────▼───────┐
      │   Node 1    │                     │    Node 2     │
      │ Flask Server│                     │ Flask Server  │
      │ Key Fragment│                     │ Key Fragment  │
-     └──────┬──────┘                     └───────┬──────┘
-            │                                     │
-            └──────────────┬──────────────┬──────┘
-                           │              │
+     └──────┬──────┘                     └───────┬───────┘
+            │                                    │
+            └──────────────┬─────────────┬───────┘
+                           │             │
                      ┌─────▼─────┐ ┌─────▼─────┐
                      │   Node 3  │ │   Node N  │
                      │ Fragment  │ │ Fragment  │
@@ -86,7 +86,7 @@ Zero-trust inspired model
 
 ---
 
-#Core Concepts
+## Core Concepts
 
 ## Federated System
 
@@ -342,7 +342,7 @@ Simulates enterprise monitoring tools.
 
 ---
 
-#Security Model
+## Security Model
 
 This system protects against:
 
@@ -359,7 +359,7 @@ Even if one node is hacked, the attacker cannot reconstruct the key.
 
 ---
 
-#Project Structure
+## Project Structure
 
 ```
 federated-key-management/
@@ -389,7 +389,7 @@ federated-key-management/
 
 ---
 
-#Installation
+## Installation
 
 Install dependencies:
 
@@ -399,7 +399,7 @@ pip install flask requests
 
 ---
 
-#Running the System
+## Running the System
 
 Start nodes:
 
@@ -417,7 +417,7 @@ python reconstruction/reconstruct.py
 
 ---
 
-#API Reference
+## API Reference
 
 ## Node Status
 
@@ -451,7 +451,7 @@ Response:
 
 ---
 
-#Example Output
+## Example Output
 
 ```
 Connecting to Node 1...
@@ -469,7 +469,7 @@ Key: A94F3D82C1B7E6F9
 
 ---
 
-#Real-World Applications
+## Real-World Applications
 
 Cloud key management (AWS KMS)
 Cryptocurrency wallets
@@ -479,7 +479,7 @@ Enterprise encryption systems
 
 ---
 
-#Why This Architecture Matters
+## Why This Architecture Matters
 
 Traditional system:
 
@@ -497,7 +497,7 @@ No single point of compromise.
 
 ---
 
-#Future Improvements
+## Future Improvements
 
 Shamir Secret Sharing implementation
 TLS encrypted communication
@@ -509,7 +509,7 @@ Automatic node discovery
 
 ---
 
-#Academic Context
+## Academic Context
 
 This project demonstrates concepts in:
 
