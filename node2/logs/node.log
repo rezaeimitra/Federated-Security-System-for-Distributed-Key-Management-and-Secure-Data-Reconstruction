@@ -1,0 +1,7 @@
+[2025-12-09T23:42:41.707449Z] [BOOT] Starting Node2 with neighbors ['http://host.docker.internal:5001', 'http://host.docker.internal:5003']
+[2025-12-09T23:44:16.738710Z] [BOOT] Starting Node2 with neighbors ['http://host.docker.internal:5001', 'http://host.docker.internal:5003']
+[2025-12-10T16:02:26.675953Z] [BOOT] Starting Node2 with neighbors ['http://host.docker.internal:5001', 'http://host.docker.internal:5003']
+[2025-12-10T16:04:31.684883Z] [SEND] Node2 returned its share
+[2025-12-10T17:51:03.328626Z] [SEND] Node2 returned its share
+[2025-12-11T14:57:35.958051Z] [BOOT] Starting Node2 with neighbors ['http://host.docker.internal:5001', 'http://host.docker.internal:5003']
+[2025-12-11T15:21:57.404657Z] [SEND] Node2 returned its share

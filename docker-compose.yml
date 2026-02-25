@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  node1:
+    build: ./node1
+    container_name: node1
+    ports:
+      - "5001:5000"
+    environment:
+      - NODE_NAME=Node1
+      - NEIGHBORS=http://host.docker.internal:5002,http://host.docker.internal:5003
+    volumes:
+      - ./secure:/secure
+      - ./node1/logs:/app/logs
+
+  node2:
+    build: ./node2
+    container_name: node2
+    ports:
+      - "5002:5000"
+    environment:
+      - NODE_NAME=Node2
+      - NEIGHBORS=http://host.docker.internal:5001,http://host.docker.internal:5003
+    volumes:
+      - ./secure:/secure
+      - ./node2/logs:/app/logs
+
+  node3:
+    build: ./node3
+    container_name: node3
+    ports:
+      - "5003:5000"
+    environment:
+      - NODE_NAME=Node3
+      - NEIGHBORS=http://host.docker.internal:5001,http://host.docker.internal:5002
+    volumes:
+      - ./secure:/secure
+      - ./node3/logs:/app/logs

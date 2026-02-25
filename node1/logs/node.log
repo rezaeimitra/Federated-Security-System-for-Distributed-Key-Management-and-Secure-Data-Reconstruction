@@ -1,0 +1,16 @@
+[2025-12-09T23:42:41.595225Z] [BOOT] Starting Node1 with neighbors ['http://host.docker.internal:5002', 'http://host.docker.internal:5003']
+[2025-12-09T23:44:16.767928Z] [BOOT] Starting Node1 with neighbors ['http://host.docker.internal:5002', 'http://host.docker.internal:5003']
+[2025-12-10T16:02:26.670505Z] [BOOT] Starting Node1 with neighbors ['http://host.docker.internal:5002', 'http://host.docker.internal:5003']
+[2025-12-10T16:04:31.848327Z] [REQUEST] got share from http://host.docker.internal:5002
+[2025-12-10T16:04:31.877919Z] [REQUEST] got share from http://host.docker.internal:5003
+[2025-12-10T16:04:31.881156Z] [RECONSTRUCT] master key reconstructed
+[2025-12-10T16:04:32.006643Z] [DECRYPT] secure partition decrypted
+[2025-12-10T17:51:04.958112Z] [REQUEST] got share from http://host.docker.internal:5002
+[2025-12-10T17:51:05.220032Z] [REQUEST] got share from http://host.docker.internal:5003
+[2025-12-10T17:51:05.223126Z] [RECONSTRUCT] master key reconstructed
+[2025-12-10T17:51:05.292819Z] [DECRYPT] secure partition decrypted
+[2025-12-11T14:57:36.906451Z] [BOOT] Starting Node1 with neighbors ['http://host.docker.internal:5002', 'http://host.docker.internal:5003']
+[2025-12-11T15:21:57.847451Z] [REQUEST] got share from http://host.docker.internal:5002
+[2025-12-11T15:21:57.931251Z] [REQUEST] got share from http://host.docker.internal:5003
+[2025-12-11T15:21:57.933499Z] [RECONSTRUCT] master key reconstructed
+[2025-12-11T15:21:58.035425Z] [DECRYPT] secure partition decrypted
